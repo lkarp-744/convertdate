@@ -50,8 +50,7 @@ def to_jd(year, month, day):
 
 def from_jd(jdc):
     "Create a new date from a Julian date."
-    cdc = floor(jdc - EPOCH)
-    year = floor((cdc - floor((cdc + 366) / 1461)) / 365) + 1
+    year = floor((4 * floor(jdc - EPOCH) + 1463) / 1461)
 
     yday = jdc - to_jd(year, 1, 1)
 
