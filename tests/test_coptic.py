@@ -66,6 +66,3 @@ class TestGregorian(CalTestCase):
         self.assertEqual(coptic.from_jd(2513890.5), (1887, 1, 1))
         self.assertEqual(coptic.to_jd(1887, 1, 1), 2513890.5)
         self.assertEqual(coptic.from_jd(2513891.0), (1887, 1, 1))
-        # self.assertEqual(coptic.from_jd(2514986.5), (1890, 1, 1))
-        # self.assertEqual(coptic.to_jd(1890, 1, 1), 2514986.5)
-        # self.assertEqual(coptic.from_jd(2514987.0), (1890, 1, 1))
